@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #2C1D21;
+    background-color: #FAF7F6;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom delicate styling */
+.font-display {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+@keyframes gentlePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+@keyframes ripplePulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(123, 22, 44, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(123, 22, 44, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(123, 22, 44, 0);
+  }
+}
+
+@keyframes floatSoft {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.animate-gentle-pulse {
+  animation: gentlePulse 4s ease-in-out infinite;
+}
+
+.animate-ripple {
+  animation: ripplePulse 2.8s cubic-bezier(0.24, 0, 0.38, 1) infinite;
+}
+
+.animate-float-soft {
+  animation: floatSoft 3.5s ease-in-out infinite;
+}
+
+@keyframes contactFloatPulse {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 4px 14px -2px rgba(44, 29, 33, 0.16);
+  }
+  50% {
+    transform: translateY(-4px) scale(1.035);
+    box-shadow: 0 8px 22px -2px rgba(44, 29, 33, 0.28);
+  }
+}
+
+.animate-contact-float {
+  animation: contactFloatPulse 3.8s ease-in-out infinite;
+}
+
+
+
+
+

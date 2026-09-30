@@ -1,0 +1,6 @@
+{
+  "name": "SENSU Collagen Tea",
+  "description": "SENSU Collagen Tea — табигый курам жана коллаген камтылган япон стилиндеги премиум чай. Күн сайын өзүңүзгө кам көрүү.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
